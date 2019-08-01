@@ -1,0 +1,198 @@
+@font-face {
+  src: url(../fonts/playfair_display/PlayfairDisplay-Regular.ttf);
+  font-family: play;
+}
+@font-face {
+  src: url(../fonts/ubuntu/Ubuntu-Regular.ttf);
+  font-family: ubuntu;
+}
+/* Golbal Style
+********************/
+*:focus {
+  outline: none;  
+}
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  font-family: ubuntu;
+  overflow-x: hidden; 
+}
+/* Navbar Style
+********************/
+.navbar {
+  background-color: #fff;
+  padding: 50px 0 40px 0;
+}
+.navbar div button span {
+  color: rgb(134, 134, 134);
+}
+.nav-link {  
+  color: #333!important;
+  font-size: 14px;
+  font-family: play!important;
+  margin-left: 50px!important;
+  padding:10px 30px!important;
+}
+.nav-link:hover {
+background-color: rgb(240, 240, 240);
+}
+/* Hero Area Style
+**********************/
+.hero-header {
+  margin: 0 auto;
+  width: 100%;
+  height: 100vh;
+  background: url(../imgs/hero-bg.jpg) center/cover; 
+}
+/* Single Blogpost Area 
+***************************/
+.single-blogpost {
+  padding: 80px 15px; 
+}
+.section-category {
+  color: #b4ad9e;
+  margin: 0;
+} 
+.section-category a {color: #b4ad9e;}
+.section-description, .section-title {
+  color: #626262;
+  font-family: play;
+  line-height: 2;
+} 
+.section-description {font-size: 14px; margin-bottom: 30px;}
+.section-title {font-size: 30px; margin: 20px 0;}
+
+/* Multiple Blogpost Area
+*****************************/
+.multiple-blogpost { margin-bottom: 70px;}
+.multiple-blogpost-bg1 {background: url(../imgs/secondary1.jpg) center/cover;height: 300px;}
+.multiple-blogpost-bg2 {background: url(../imgs/secondary2.jpg) center/cover;height: 300px;}
+.multiple-blogpost-bg3 {background: url(../imgs/secondary3.jpg) center/cover;height: 300px;}
+.multiple-blogpost-bg4 {background: url(../imgs/secondary4.jpg) center/cover;height: 300px;}
+
+/* Newsletter Area
+*****************************/
+.newsletter {
+  background-color: #F3F3F3;
+}
+.newsletter .col-md-6 {
+  padding: 70px 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.newsletter .section-title {
+  color: rgb(29, 29, 29);
+  margin: 0 0 50px 0;
+  padding: 0;
+}
+.newsletter-email {
+  display: flex;
+  justify-content: space-between;
+  width: 80%;
+  border-bottom: 1px solid rgb(90, 90, 90);
+  padding: 0 5px 10px 5px;
+}
+.newsletter-email input {
+  border: none;
+  background-color: #f3f3f3;
+}
+.newsletter-email input::placeholder {
+  font-family: play;
+  font-size: 14px;
+  color: #626262; 
+}
+.newsletter-email button {
+  border: none;
+  background-color: #f3f3f3;
+}
+/* Newsletter Bottom Post Area
+*****************************/
+.newsletter-bottom-post {
+  display: flex;
+  justify-content: center;
+}
+.loadmore {
+  color: #626262;
+  font-family: play;
+  font-size: 20px;
+  background-color: rgb(255, 255, 255);
+  border: 1px solid #626262;
+  padding: 15px 30px;
+  transition: 0.3s;
+}
+.loadmore:hover {
+  background-color: rgb(240, 240, 240);;
+}
+.loadmore-wrapper {
+  margin-bottom: 80px;
+}
+/* Footer Area
+******************/
+footer ul {margin: 0;}
+footer li {display: inline;}
+footer {
+  background-color: #f3f3f3;
+  padding: 30px 0;
+}
+footer li a {
+  color: #333;
+  font-family: play;
+  padding: 0 8px;
+}
+footer li a:hover {
+  color: #333;
+  text-decoration: none;
+}
+
+/* Collapsing icon style
+*****************************/
+.navbar div button span {
+  color: aqua;
+}
+.navbar-dark .navbar-toggler-icon {
+  /* background-image: url(data:image/svg+xml,%3csvg viewBox='0 0 30 30' xmlns='http://www.w3.org/2000…p='round' stroke-miterlimit='10' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e); */
+  background-image: url(../imgs/span.jpg);
+}
+
+/* Media Queries
+********************/
+@media (max-width: 770px) {
+  footer .col-md-10 .row div {
+    text-align: left!important;
+    margin-top: 10px;
+  }
+}
+@media (max-width: 576px) {
+  .navbar-brand img {
+    margin-left: 10px;
+  }
+  .section-title {
+    font-size: 20px;
+  }
+  .section-description {
+    font-size: 13px;
+  }
+  .col-md-6.px-md-4 {
+    margin-bottom: 30px;
+  }
+  .single-blogpost {
+    padding: 80px 15px 50px 15px;
+  }
+  .multiple-blogpost {
+    margin-bottom: 0px;
+  }
+  footer li {
+    display: block;
+    margin-bottom: 5px;
+    text-align: left!important;
+  }
+  footer li a {
+    list-style: none;
+  }
+  footer .col-md-10 .row div {
+    margin-top: 0px;
+  }
+}
